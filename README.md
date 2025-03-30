@@ -17,7 +17,6 @@
 - [Using as a Search Engine](#using-as-a-search-engine)
 - [Using ChatBot's API](#using-chatbot-api)
 - [Expose ChatBot to a network](#expose-ChatBOt-to-network)
-- [One-Click Deployment](#one-click-deployment)
 - [Upcoming Features](#upcoming-features)
 
 
@@ -135,11 +134,6 @@ ChatBot also provides an API for developers looking to integrate its powerful se
 ## Expose to network
 
 ChatBot runs on Next.js and handles all API requests. It works right away on the same network and stays accessible even with port forwarding.
-
-## One-Click Deployment
-
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-ono/?openapp=system-template%3FtemplateName%ChatBOt)
-[![Deploy to RepoCloud](https:6x52.cloudfront.net/deploylobe.svg)](h.io/details/?app_id=267)
 
 ## Upcoming Features
 
