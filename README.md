@@ -60,7 +60,7 @@ There are mainly 2 ways of installing ChatBOt - With Docker, Without Docker. Usi
 2. Clone the ChatBot repository:
 
    ```bash
-   git clone https://github.com
+   git clone https://github.com/Abhidroid87/chatbot.git
    ```
 
 3. After cloning, navigate to the directory containing the project files.
