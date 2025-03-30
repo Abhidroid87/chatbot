@@ -1,7 +1,7 @@
-# 🚀 ChatBot <!-- omit in toc -->
+# 🚀 Production Ready- ChatBot <!-- omit in toc -->
 
 
-[![Discord](https://dcbadge.vercel.app/api/server/compact=true)](https://discord.gg/26aArM)
+[![Discord](https://dcbadge.vercel.app/api/server/paUARVEz?style=flat&compact=true)](https://discord.gg/paUARVEz)
 
 ![preview](.assets?)
 
