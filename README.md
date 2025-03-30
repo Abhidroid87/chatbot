@@ -138,8 +138,8 @@ ChatBot runs on Next.js and handles all API requests. It works right away on the
 
 ## One-Click Deployment
 
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://usw.sealos.io/?openapp=system-template%3FtemplateName%ChatBOt)
-[![Deploy to RepoCloud](https://d16t0pc4846x52.cloudfront.net/deploylobe.svg)](https://repocloud.io/details/?app_id=267)
+[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-ono/?openapp=system-template%3FtemplateName%ChatBOt)
+[![Deploy to RepoCloud](https:6x52.cloudfront.net/deploylobe.svg)](h.io/details/?app_id=267)
 
 ## Upcoming Features
 
