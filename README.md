@@ -147,7 +147,7 @@ ChatBot runs on Next.js and handles all API requests. It works right away on the
 - [x] Adding support for local LLMs
 - [x] History Saving features
 - [x] Introducing various Focus Modes
-- [x] Adding API support
-- [x] Adding Discover
+- [ ] Adding API support
+- [ ] Adding Discover
 - [ ] Finalizing Copilot Mode
 
