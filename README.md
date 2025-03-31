@@ -31,6 +31,7 @@ Want to know more about its architecture and how it works? You can read it [here
 
 ## Preview
 
+![preview](.assets/Sampel.png?)
 ![video-preview](.assets/d-preview.gif)
 
 ## Features
