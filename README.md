@@ -1,7 +1,7 @@
-# 🚀 ChatBot <!-- omit in toc -->
+# 🚀 Production Ready- ChatBot <!-- omit in toc -->
 
 
-[![Discord](https://dcbadge.vercel.app/api/server/compact=true)](https://discord.gg/26aArM)
+[![Discord](https://dcbadge.vercel.app/api/server/paUARVEz?style=flat&compact=true)](https://discord.gg/paUARVEz)
 
 ![preview](.assets?)
 
@@ -17,7 +17,6 @@
 - [Using as a Search Engine](#using-as-a-search-engine)
 - [Using ChatBot's API](#using-chatbot-api)
 - [Expose ChatBot to a network](#expose-ChatBOt-to-network)
-- [One-Click Deployment](#one-click-deployment)
 - [Upcoming Features](#upcoming-features)
 
 
@@ -62,7 +61,7 @@ There are mainly 2 ways of installing ChatBOt - With Docker, Without Docker. Usi
 2. Clone the ChatBot repository:
 
    ```bash
-   git clone https://github.com
+   git clone https://github.com/Abhidroid87/chatbot.git
    ```
 
 3. After cloning, navigate to the directory containing the project files.
@@ -137,18 +136,13 @@ ChatBot also provides an API for developers looking to integrate its powerful se
 
 ChatBot runs on Next.js and handles all API requests. It works right away on the same network and stays accessible even with port forwarding.
 
-## One-Click Deployment
-
-[![Deploy to Sealos](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://usw.sealos.io/?openapp=system-template%3FtemplateName%ChatBOt)
-[![Deploy to RepoCloud](https://d16t0pc4846x52.cloudfront.net/deploylobe.svg)](https://repocloud.io/details/?app_id=267)
-
 ## Upcoming Features
 
 - [x] Add settings page
 - [x] Adding support for local LLMs
 - [x] History Saving features
 - [x] Introducing various Focus Modes
-- [x] Adding API support
-- [x] Adding Discover
+- [ ] Adding API support
+- [ ] Adding Discover
 - [ ] Finalizing Copilot Mode
 
