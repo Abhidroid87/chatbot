@@ -3,13 +3,20 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "Sampel",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "start": "npm run db:push && node dist/app.js",
     "build": "tsc",
     "dev": "nodemon --ignore uploads/ src/app.ts ",
     "db:push": "drizzle-kit push sqlite",
     "format": "prettier . --check",
-    "format:write": "prettier . --write"
+    "format:write": "prettier . --write",
+    "check-updates": "npx npm-check-updates",
+    "update-deps": "npx npm-check-updates -u && npm install",
+    "prestart": "node scripts/version-check.js && npm run safety-check",
+    "safety-check": "npm audit && npm outdated"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.10",

@@ -29,8 +29,8 @@ Using SearxNG to stay current and fully open source, ChatBot ensures you always 
 Want to know more about its architecture and how it works? You can read it [here](https://github.com/tree/master/docs/architecture/README.md).
 
 ## Preview
-### [Models Architecture "Data Retrieval Approach](.assets/Sampel.png?)
 ![preview](.assets/Sampel.png?)
+### [Models Architecture "Data Retrieval Approach"]
 ![video-preview](.assets/d-preview.gif)
 
 ## Features
