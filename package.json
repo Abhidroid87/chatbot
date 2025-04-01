@@ -55,6 +55,12 @@
     "pdf-parse": "^1.1.1",
     "winston": "^3.13.0",
     "ws": "^8.17.1",
-    "zod": "^3.22.4"
+    "zod": "^3.22.4",
+    "@langchain/pinecone": "^0.0.3",
+    "hnswlib-node": "^1.4.2",
+    "redis": "^4.6.13",
+    "@langchain/cohere": "^0.0.2",
+    "chromadb": "^1.8.1",
+    "sentence-splitter": "^4.2.1"
   }
 }

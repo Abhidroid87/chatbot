@@ -1,15 +1,30 @@
-feat: Add automated version management and dependency checks
+feat: Major enhancements to RAG system and UI theming
 
-- Add .nvmrc for Node version management
-- Add safety checks (npm audit + outdated)
-- Enhance error handling in version-check.js
-- Add automatic dependency installation
-- Add visual status indicators for checks
+RAG Improvements:
+- Add hybrid search with dense + sparse retrieval
+- Implement HyDE for better document retrieval
+- Add contextual compression
+- Implement auto-metadata tagging
+- Add self-querying retrieval
 
-Breaking changes: None
-Dependencies added: semver
+UI Improvements:
+- Add theme switching (light/dark mode)
+- Add persistent theme storage
+- Add accessible theme toggle
+
+Dependencies Added:
+- @langchain/cohere
+- chromadb
+- sentence-splitter
+
+Performance Improvements:
+- Implement document caching
+- Add parallel processing for documents
+- Add response validation
+
+Breaking Changes: None
 
 Testing:
-- Verified Node.js version check
-- Tested dependency updates
-- Confirmed error handling
+- Verified RAG improvements
+- Tested theme switching
+- Confirmed cache performance
