@@ -1,92 +1,6 @@
-# Next.js Chatbot Application
-
-## Project Description
-ChatBot is an advanced AI-powered search and conversation platform that combines:
-
-### Core Capabilities
-- Real-time web search using SearxNG
-- Multiple AI models integration (OpenAI, Ollama, Groq, Anthropic)
-- RAG (Retrieval-Augmented Generation) architecture
-- Privacy-focused design with local LLM support
-
-### Intelligent Features
-- Smart query understanding and processing
-- Source verification and ranking
-- Multiple specialized focus modes
-- Real-time information retrieval
-- Adaptive response generation
-
-### Technical Excellence
-- Modern Next.js/TypeScript stack
-- Docker-based deployment
-- Extensible API architecture
-- Theme customization
-- Responsive design
-
-## Key Features
-- Interactive chat interface
-- Theme customization (Light/Dark mode)
-- Persistent theme preferences
-- Responsive design
-
-## Technical Stack
-
-### Frontend
-- Next.js (React Framework)
-- TypeScript
-- React for UI components
-- LocalStorage for client-side storage
-
-### Backend & API
-- SearxNG (Metasearch engine)
-- Multiple LLM Providers:
-  - OpenAI
-  - Ollama (Local LLMs)
-  - Groq
-  - Anthropic
-
-### AI/ML Components
-- RAG (Retrieval-Augmented Generation)
-- Similarity Search Algorithms
-- Embedding Systems
-- Natural Language Processing
-
-### Infrastructure
-- Docker containerization
-- Docker Compose for orchestration
-- Node.js runtime
-- RESTful APIs
-
-### Integration Services
-- Wolfram Alpha API
-- YouTube Data API
-- Reddit API
-- Discord integration
-
-### Development Tools
-- npm package manager
-- Git version control
-- Environment variables (config.toml)
-
-## Project Structure
-- `src/pages/_document.tsx`: Custom document setup and theme initialization
-- (Other files to be added as project grows)
-
-## Getting Started
-1. Install dependencies: `npm install`
-2. Run development server: `npm run dev`
-3. Open `http://localhost:3000`
-
-## Theme System
-The application includes a built-in theme system that:
-- Persists user theme preference
-- Prevents flash of unstyled content
-- Supports light and dark modes
-
 # 🚀 Production Ready- ChatBot <!-- omit in toc -->
 
-
-[![Discord](https://dcbadge.vercel.app/api/server/paUARVEz?style=flat&compact=true)](https://discord.gg/paUARVEz)
+[![Discord](https://dcbadge.vercel.app/api/server/RFMNGxSBfm?style=flat&compact=true)](https://discord.gg/RFMNGxSBfm)
 
 ## Overview
 
@@ -113,26 +27,6 @@ ChatBot is an open-source AI-powered search engine that combines RAG architectur
 - Theme system
 - Responsive design
 
-## Technology Stack
-
-### Core Stack
-- Frontend: Next.js, TypeScript, React
-- Search: SearxNG
-- LLM Integration: OpenAI, Ollama, Groq, Anthropic
-- Infrastructure: Docker, Node.js
-
-### AI Components
-- RAG Implementation
-- Similarity Search
-- Embedding Systems
-- NLP Processing
-
-### External Services
-- Wolfram Alpha
-- YouTube API
-- Reddit API
-- Discord Integration
-
 ## Installation Requirements
 
 ### Docker Setup (Recommended)
@@ -149,7 +43,7 @@ ChatBot is an open-source AI-powered search engine that combines RAG architectur
 
 ## Installation
 
-There are mainly 2 ways of installing ChatBOt - With Docker, Without Docker. Using Docker is highly recommended.
+There are mainly 2 ways of installing ChatBot - With Docker, Without Docker. Using Docker is highly recommended.
 
 ### Getting Started with Docker (Recommended)
 
@@ -169,7 +63,7 @@ There are mainly 2 ways of installing ChatBOt - With Docker, Without Docker. Usi
    - `GROQ`: Your Groq API key. **You only need to fill this if you wish to use Groq's hosted models**.
    - `ANTHROPIC`: Your Anthropic API key. **You only need to fill this if you wish to use Anthropic models**.
 
-     **Note**: You can change these after starting ChatBOt from the settings dialog.
+     **Note**: You can change these after starting ChatBot from the settings dialog.
 
    - `SIMILARITY_MEASURE`: The similarity measure to use (This is filled by default; you can leave it as is if you are unsure about it.)
 
@@ -286,4 +180,6 @@ src/
 - No outdated embedded data
 - Dynamic web searching
 - Source verification and ranking
+
+For technical details and architecture information, please see [ARCHITECTURE.md](./docs/ARCHITECTURE.md)
 

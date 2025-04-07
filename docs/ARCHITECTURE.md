@@ -1,95 +1,86 @@
-# RAG Chatbot Architecture
+# ChatBot Architecture
 
 ## System Architecture
 
-### Core Components
-1. **Query Processing Layer**
-   - Input validation and preprocessing
-   - Context analysis
-   - Query expansion
-   - Mode detection
+```
+┌─────────────────┐     ┌──────────────┐     ┌───────────────┐
+│  Next.js Front  │────▶│   API Layer  │────▶│  RAG Engine   │
+└─────────────────┘     └──────────────┘     └───────────────┘
+                                                     │
+                                                     ▼
+┌─────────────────┐     ┌──────────────┐     ┌───────────────┐
+│  Model Manager  │◀────│ Search Layer │◀────│ Query Router  │
+└─────────────────┘     └──────────────┘     └───────────────┘
+```
 
-2. **RAGAgent**
-   - Vector Store: Dense retrieval (OpenAI embeddings)
-   - BM25 Retriever: Sparse retrieval
-   - HyDE: Hypothetical Document Embeddings
-   - Result Cache Manager
+## Core Components
 
-3. **Search Layer**
-   - SearxNG integration
-   - Multi-source aggregation
-   - Result filtering
-   - Source ranking
+### 1. RAG Implementation
+- Real-time retrieval using SearxNG
+- Dynamic similarity scoring
+- Context window optimization
+- Source verification system
 
-4. **LLM Integration**
-   - Model routing
-   - Response generation
-   - Content validation
-   - Format handling
+### 2. Model Integration
+- Provider-agnostic architecture
+- Automatic failover system
+- Response quality monitoring
+- Context length management
 
-### Data Flow
-1. Query Processing
-   - Input sanitization
-   - Context extraction
-   - Mode selection
-   - Query optimization
+### 3. Query Processing
+- Intent classification
+- Focus mode routing
+- Source prioritization
+- Response formatting
 
-2. Retrieval Process
-   - Parallel document retrieval
-   - Hybrid search execution
-   - Document ranking
-   - Cache management
+### 4. API Design
+- RESTful endpoints
+- WebSocket support
+- Rate limiting
+- Error handling
 
-3. Response Generation
-   - Context assembly
-   - Model selection
-   - Response validation
-   - Format adaptation
+### 5. Performance
+- Response caching
+- Query optimization
+- Load balancing
+- Resource management
 
-### Security Architecture
-1. **API Security**
-   - Rate limiting
-   - Request validation
-   - Token management
-   - Access control
+## Data Flow
 
-2. **Data Privacy**
-   - No permanent storage
-   - Local LLM options
-   - Request anonymization
-   - Secure configurations
+1. Query Reception
+2. Intent Analysis
+3. Search Execution
+4. Context Building
+5. Model Processing
+6. Response Formatting
+7. Client Delivery
 
-### Deployment Architecture
-1. **Container Structure**
-   - Frontend container
-   - API container
-   - Search container
-   - Cache container
+## Security Considerations
 
-2. **Scaling Strategy**
-   - Horizontal scaling
-   - Load balancing
-   - Cache distribution
-   - Resource optimization
+- API key management
+- Rate limiting
+- Input sanitization
+- No data persistence
+- Network isolation
 
-### Monitoring
-1. **Performance Metrics**
-   - Response times
-   - Cache hit rates
-   - Model performance
-   - Resource usage
+## Deployment Architecture
 
-2. **System Health**
-   - Service status
-   - Error rates
-   - Resource availability
-   - Network health
+### Docker Setup
+```
+┌─────────────────┐
+│  Next.js App    │
+├─────────────────┤
+│  Node Runtime   │
+├─────────────────┤
+│  Base Alpine    │
+└─────────────────┘
+```
 
-### Version Control
-- Model versioning
-- Configuration management
-- API versioning
-- Deployment tracking
+### Network Configuration
+- Internal service mesh
+- Reverse proxy support
+- SSL termination
+- Port mapping
 
 # Next.js Chatbot Application
 
