@@ -1,0 +1,30 @@
+feat: Major enhancements to RAG system and UI theming
+
+RAG Improvements:
+- Add hybrid search with dense + sparse retrieval
+- Implement HyDE for better document retrieval
+- Add contextual compression
+- Implement auto-metadata tagging
+- Add self-querying retrieval
+
+UI Improvements:
+- Add theme switching (light/dark mode)
+- Add persistent theme storage
+- Add accessible theme toggle
+
+Dependencies Added:
+- @langchain/cohere
+- chromadb
+- sentence-splitter
+
+Performance Improvements:
+- Implement document caching
+- Add parallel processing for documents
+- Add response validation
+
+Breaking Changes: None
+
+Testing:
+- Verified RAG improvements
+- Tested theme switching
+- Confirmed cache performance
