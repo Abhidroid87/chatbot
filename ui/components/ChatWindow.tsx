@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { Document } from '@langchain/core/documents';
+import { useTheme } from 'next-themes';
+import { Sun, Moon } from 'lucide-react';
 import Navbar from './Navbar';
 import Chat from './Chat';
 import EmptyChat from './EmptyChat';
@@ -401,6 +403,33 @@ const ChatWindow = ({ id }: { id?: string }) => {
 
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
 
+  const { theme, setTheme } = useTheme();
+
+  const ThemeToggle = () => {
+    return (
+      <button
+        onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        className="fixed top-4 right-4 lg:right-8 p-2 rounded-lg bg-light-secondary dark:bg-dark-secondary border border-light-200 dark:border-dark-200 transition-all duration-300 hover:scale-110"
+      >
+        <div className="relative w-6 h-6">
+          <div className="absolute inset-0 transition-opacity duration-300">
+            {theme === 'dark' ? (
+              <Sun
+                className="w-6 h-6 text-yellow-400 transition-transform duration-300 rotate-0 dark:rotate-90"
+                strokeWidth={2}
+              />
+            ) : (
+              <Moon
+                className="w-6 h-6 text-slate-800 transition-transform duration-300 rotate-90 dark:-rotate-0"
+                strokeWidth={2}
+              />
+            )}
+          </div>
+        </div>
+      </button>
+    );
+  };
+
   useEffect(() => {
     if (
       chatId &&
@@ -623,6 +652,7 @@ const ChatWindow = ({ id }: { id?: string }) => {
   if (hasError) {
     return (
       <div className="relative">
+        <ThemeToggle />
         <div className="absolute w-full flex flex-row items-center justify-end mr-5 mt-5">
           <Link href="/settings">
             <Settings className="cursor-pointer lg:hidden" />
@@ -642,6 +672,7 @@ const ChatWindow = ({ id }: { id?: string }) => {
       <NextError statusCode={404} />
     ) : (
       <div>
+        <ThemeToggle />
         {messages.length > 0 ? (
           <>
             <Navbar chatId={chatId!} messages={messages} />
