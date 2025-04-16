@@ -1,8 +1,8 @@
 {
-  "name": "chatbot-frontend",
-  "version": "1.0.0-rc3",
+  "name": "perplexica-frontend",
+  "version": "1.10.0-rc3",
   "license": "MIT",
-  "author": "Abhishek",
+  "author": "ItzCrazyKns",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

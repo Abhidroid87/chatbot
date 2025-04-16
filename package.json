@@ -3,20 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "author": "Sampel",
-  "engines": {
-    "node": ">=14.0.0"
-  },
   "scripts": {
     "start": "npm run db:push && node dist/app.js",
     "build": "tsc",
     "dev": "nodemon --ignore uploads/ src/app.ts ",
     "db:push": "drizzle-kit push sqlite",
     "format": "prettier . --check",
-    "format:write": "prettier . --write",
-    "check-updates": "npx npm-check-updates",
-    "update-deps": "npx npm-check-updates -u && npm install",
-    "prestart": "node scripts/version-check.js && npm run safety-check",
-    "safety-check": "npm audit && npm outdated"
+    "format:write": "prettier . --write"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.10",
@@ -55,12 +48,6 @@
     "pdf-parse": "^1.1.1",
     "winston": "^3.13.0",
     "ws": "^8.17.1",
-    "zod": "^3.22.4",
-    "@langchain/pinecone": "^0.0.3",
-    "hnswlib-node": "^1.4.2",
-    "redis": "^4.6.13",
-    "@langchain/cohere": "^0.0.2",
-    "chromadb": "^1.8.1",
-    "sentence-splitter": "^4.2.1"
+    "zod": "^3.22.4"
   }
 }
