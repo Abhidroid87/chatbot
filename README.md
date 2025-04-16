@@ -1,59 +1,49 @@
 # 🚀 Production Ready- ChatBot <!-- omit in toc -->
 
-
-[![Discord](https://dcbadge.vercel.app/api/server/paUARVEz?style=flat&compact=true)](https://discord.gg/paUARVEz)
-
-![preview](.assets?)
-
-## Table of Contents <!-- omit in toc -->
-
-- [Overview](#overview)
-- [Preview](#preview)
-- [Features](#features)
-- [Installation](#installation)
-  - [Getting Started with Docker (Recommended)](#getting-started-with-docker-recommended)
-  - [Non-Docker Installation](#non-docker-installation)
-  - [Ollama Connection Errors](#ollama-connection-errors)
-- [Using as a Search Engine](#using-as-a-search-engine)
-- [Using ChatBot's API](#using-chatbot-api)
-- [Expose ChatBot to a network](#expose-ChatBOt-to-network)
-- [Upcoming Features](#upcoming-features)
-
+[![Discord](https://dcbadge.vercel.app/api/server/RFMNGxSBfm?style=flat&compact=true)](https://discord.gg/RFMNGxSBfm)
 
 ## Overview
 
-ChatBOt is an open-source AI-powered searching tool or an AI-powered search engine that goes deep into the internet to find answers. Inspired by Perplexity AI, it's an open-source option that not just searches the web but understands your questions. It uses advanced machine learning algorithms like similarity searching and embeddings to refine results and provides clear answers with sources cited.
+ChatBot is an open-source AI-powered search engine that combines RAG architecture with real-time web search capabilities. Using SearxNG and multiple LLM providers, it delivers current information while maintaining privacy.
 
-Using SearxNG to stay current and fully open source, ChatBot ensures you always get the most up-to-date information without compromising your privacy.
+## Core Features
 
-Want to know more about its architecture and how it works? You can read it [here](https://github.com/tree/master/docs/architecture/README.md).
+### Search Capabilities
+- Real-time web search via SearxNG
+- Multiple AI models (OpenAI, Ollama, Groq, Anthropic)
+- RAG architecture with similarity search
+- Privacy-focused design
 
-## Preview
-![preview](.assets/Sampel.png?)
-### [Models Architecture "Data Retrieval Approach"]
-![video-preview](.assets/d-preview.gif)
+### Intelligence
+- Smart query processing
+- Source verification
+- Multiple focus modes
+- Adaptive responses
 
-## Features
+### Technical Foundation
+- Next.js/TypeScript stack
+- Docker deployment
+- RESTful APIs
+- Theme system
+- Responsive design
 
-- **Local LLMs**: You can make use local LLMs such as Llama3 and Mixtral using Ollama.
-- **Two Main Modes:**
-  - **Copilot Mode:** (In development) Boosts search by generating different queries to find more relevant internet sources. Like normal search instead of just using the context by SearxNG, it visits the top matches and tries to find relevant sources to the user's query directly from the page.
-  - **Normal Mode:** Processes your query and performs a web search.
-- **Focus Modes:** Special modes to better answer specific types of questions. ChatBot currently has 6 focus modes:
-  - **All Mode:** Searches the entire web to find the best results.
-  - **Writing Assistant Mode:** Helpful for writing tasks that do not require searching the web.
-  - **Academic Search Mode:** Finds articles and papers, ideal for academic research.
-  - **YouTube Search Mode:** Finds YouTube videos based on the search query.
-  - **Wolfram Alpha Search Mode:** Answers queries that need calculations or data analysis using Wolfram Alpha.
-  - **Reddit Search Mode:** Searches Reddit for discussions and opinions related to the query.
-- **Current Information:** Some search tools might give you outdated info because they use data from crawling bots and convert them into embeddings and store them in a index. Unlike them, ChatBot uses SearxNG, a metasearch engine to get the results and rerank and get the most relevant source out of it, ensuring you always get the latest information without the overhead of daily data updates.
-- **API**: Integrate ChatBOt into your existing applications and make use of its capibilities.
+## Installation Requirements
 
-It has many more features like image and video search. Some of the planned features are mentioned in [upcoming features](#upcoming-features).
+### Docker Setup (Recommended)
+- Docker Engine
+- 4GB+ RAM
+- 10GB+ Storage
+- Internet connection
+
+### Manual Setup
+- Node.js 16+
+- npm/yarn
+- SearxNG instance
+- API keys for chosen services
 
 ## Installation
 
-There are mainly 2 ways of installing ChatBOt - With Docker, Without Docker. Using Docker is highly recommended.
+There are mainly 2 ways of installing ChatBot - With Docker, Without Docker. Using Docker is highly recommended.
 
 ### Getting Started with Docker (Recommended)
 
@@ -73,7 +63,7 @@ There are mainly 2 ways of installing ChatBOt - With Docker, Without Docker. Usi
    - `GROQ`: Your Groq API key. **You only need to fill this if you wish to use Groq's hosted models**.
    - `ANTHROPIC`: Your Anthropic API key. **You only need to fill this if you wish to use Anthropic models**.
 
-     **Note**: You can change these after starting ChatBOt from the settings dialog.
+     **Note**: You can change these after starting ChatBot from the settings dialog.
 
    - `SIMILARITY_MEASURE`: The similarity measure to use (This is filled by default; you can leave it as is if you are unsure about it.)
 
@@ -131,20 +121,65 @@ If you wish to use ChatBot as an alternative to traditional search engines like 
 
 ChatBot also provides an API for developers looking to integrate its powerful search engine into their own applications. You can run searches, use multiple models and get answers to your queries.
 
-
 ## Expose to network
 
 ChatBot runs on Next.js and handles all API requests. It works right away on the same network and stays accessible even with port forwarding.
 
-## Upcoming Features
+## Project Structure
+```
+src/
+├── pages/
+│   ├── _document.tsx     # Theme initialization
+│   ├── api/             # API routes
+│   └── components/      # UI components
+├── lib/
+│   ├── rag/            # RAG implementation
+│   └── models/         # LLM integrations
+└── config/            # Configuration files
+```
 
-- [x] Add settings page
-- [x] Adding support for local LLMs
-- [x] History Saving features
-- [ ] Upgraded the Rag System
-- [ ] Introducing various Focus Modes
-- [ ] Adding API support
-- [ ] Adding Discover
-- [ ] Ghibli Model API for Image
-- [ ] AI Prompt(CLI)
+## Upcoming Features
+- [ ] Enhanced RAG System
+- [ ] Additional Focus Modes
+- [ ] API Expansion
+- [ ] Discover Feature
+- [ ] Ghibli Model Integration
+- [ ] AI Prompt CLI
+
+## What Makes This Chatbot Unique
+
+1. Advanced RAG Implementation
+- Real-time web search using SearxNG instead of static embeddings
+- Multiple retrieval modes (Copilot & Normal Mode)
+- Adaptive focus modes for specialized queries (Academic, YouTube, Reddit, etc.)
+
+2. Model Flexibility
+- Support for multiple LLM providers (OpenAI, Ollama, Groq, Anthropic)
+- Local LLM support through Ollama integration
+- Easy model switching without redeployment
+
+3. Privacy-Focused Architecture
+- No data storage requirements
+- Local LLM options for complete privacy
+- Open-source search engine integration
+
+4. Specialized Focus Modes
+- Academic research optimization
+- YouTube content search
+- Wolfram Alpha integration for calculations
+- Reddit discussions integration
+- Writing assistance mode
+
+5. Developer-Friendly Features
+- Full API access
+- Docker support
+- Extensible architecture
+- Easy network exposure
+
+6. Real-Time Information
+- No outdated embedded data
+- Dynamic web searching
+- Source verification and ranking
+
+For technical details and architecture information, please see [ARCHITECTURE.md](./docs/ARCHITECTURE.md)
 
